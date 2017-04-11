@@ -1,4 +1,5 @@
 build/*
+!build/readme.md
 src/css/*.css
 node_modules/
 Thumbs.db
