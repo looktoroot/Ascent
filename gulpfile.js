@@ -10,6 +10,7 @@ var mqpacker = require("css-mqpacker");
 var del = require("del");
 var ghPages = require("gulp-gh-pages");
 var run = require("run-sequence");
+var imagemin = require("gulp-imagemin");
 
 
 // Компиляция sass + автопрефиксер и сборщик медиа выражений(как плагины postcss)
@@ -40,6 +41,16 @@ gulp.task("serve", function() {
   gulp.watch("src/sass/**/*.scss", ["style"]);
   gulp.watch("src/*.html").on("change", browserSync.reload);
   gulp.watch("src/js/*.js").on("change", browserSync.reload);
+});
+
+//Оптимизация растровых изображений
+gulp.task("images", function() {
+  return gulp.src("src/img/**/*.{png,jpg,gif}")
+  .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true})
+]))
+    .pipe(gulp.dest("src/img"));
 });
 
 // Отчистка build
