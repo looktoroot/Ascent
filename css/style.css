@@ -409,9 +409,9 @@ template {
   margin: 30px auto;
   background-color: gray; }
   .test-block:hover {
-    background-color: red; }
+    background-color: #ccadff; }
   .test-block__title {
-    color: #fff;
+    color: #ccf;
     text-align: center;
     margin: 0 auto;
     padding: 20px; }
