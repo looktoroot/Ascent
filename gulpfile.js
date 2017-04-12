@@ -9,6 +9,7 @@ var browserSync = require("browser-sync").create();
 var mqpacker = require("css-mqpacker");
 var del = require("del");
 var ghPages = require("gulp-gh-pages");
+var run = require("run-sequence");
 
 
 // Компиляция sass + автопрефиксер и сборщик медиа выражений(как плагины postcss)
@@ -62,8 +63,14 @@ base: "src" })
     .pipe(gulp.dest("build"));
 });
 
-// Сборка проекта в build(переделать)
-gulp.task("build", ["clean", "style", "copy"]);
+// Сборка проекта в build, последовательное выполнение задач
+gulp.task("build", function(callback) {
+  run(
+    "clean",
+    "style",
+    "copy",
+    callback
+); });
 
 // Отправка в GH pages (ветку gh-pages репозитория)
 gulp.task("deploy", function() {

@@ -1,10 +1,17 @@
 .test-block {
   display: flex;
   width: 300px;
-  background-color: gray;
-}
+  margin: 30px auto;
+  background-color: green;
 
-.test-block__title {
-  color: #fff;
-  text-align: center;
+  &:hover {
+    background-color: #ccadff;
+  }
+
+  &__title {
+    color: #ccf;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+  }
 }
