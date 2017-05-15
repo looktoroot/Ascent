@@ -1,11 +1,22 @@
-$color-section-first:               #87509c;
-$color-section-second:              #17c2a4;
-$color-section-third:               #e7f1f8;
-$color-section-fourth:              #ffffff;
-$color-section-fifth:               #ffdd99;
-$color-section-sixth:               #d74680;
-$color-section-seventh:             #3c5499;
+//цвета фонов разделов
+$color-page-header:                 #87509c;
+$color-section-first:               #17c2a4;
+$color-section-second:              #e7f1f8;
+$color-section-third:               #ffffff;
+$color-section-fourth:              #ffdd99;
+$color-section-fifth:               #d74680;
+$color-section-sixth:               #3c5499;
+$color-page-footer:                 #3c5499;
 
+//цвета шрифтов
 $color-font-main:                   #ffffff;
 $color-font-main--dark:             #3c4761;
-$color-font-main--mine-shaft:       #393939;
+$color-font-main--dark-other:       #393939;
+
+//цвета кнопок
+$color-button--orange:              #eb7d4b;
+$color-button--green:               #17c2a4;
+$color-button--blue:                #30bae7;
+
+//размеры шрифтов
+$font-size:                            16px;
