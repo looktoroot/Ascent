@@ -1,5 +1,6 @@
 //цвета фонов разделов
 $color-page-header:                 #87509c;
+$color-page-header--hover:          darken(saturate(adjust-hue($color-page-header, -3), 2.99), 11.18);
 $color-section-first:               #17c2a4;
 $color-section-second:              #e7f1f8;
 $color-section-third:               #ffffff;
@@ -14,9 +15,28 @@ $color-font-main--dark:             #3c4761;
 $color-font-main--dark-other:       #393939;
 
 //цвета кнопок
-$color-button--orange:              #eb7d4b;
-$color-button--green:               #17c2a4;
-$color-button--blue:                #30bae7;
+$color-btn-default:                 #999999;
+$color-btn--orange:                 #eb7d4b;
+$color-btn--green:                  #17c2a4;
+$color-btn--blue:                   #30bae7;
+$color-btn-hover--default:          darken($color-btn-default, 10);
+$color-btn-hover--orange:           darken(desaturate($color-btn--orange, 24.72), 9.02);
+$color-btn-hover--green:            darken(desaturate($color-btn--green, 0.42), 6.27);
+$color-btn-hover--blue:             darken(desaturate($color-btn--blue, 13.67), 8.04);
+
+
+//семейство шрифта
+$font-family:                       "TitilliumWeb", "Arial", sans-serif;
 
 //размеры шрифтов
-$font-size:                            16px;
+$font-size:                         16px;
+$font-size-header-text:             42.16px;
+$font-size-header-text--small:      30px;
+
+
+
+//размеры экранов
+$screen-sm:                         480px;
+$screen-md:                         768px;
+$screen-lg:                         992px;
+

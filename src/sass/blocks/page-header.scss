@@ -1,3 +1,58 @@
 .page-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   background-color: $color-page-header;
+  color: $color-font-main;
+
+  &__top {
+    margin-bottom: 50px;
+  }
+
+  &__logo {
+    margin-bottom: 10px;
+
+    display: block;
+  }
+
+  &__nav {
+    text-transform: uppercase;
+  }
+
+  &__nav-list{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style: none;
+  }
+
+  &__nav-item {
+    border-color: transparent;
+    border-style: solid;
+    border-top-width: 7px;
+    border-bottom-width: 7px;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: $color-page-header--hover;
+      border-color: $color-page-header--hover;
+    }
+  }
+
+  &__nav-item a {
+    color: inherit;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+
+    font-size: $font-size-header-text--small;
+    font-weight: 600;
+  }
 }
+

@@ -1,0 +1,54 @@
+.button {
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  max-width: 293px;
+  min-height: 66px;
+
+  color: inherit;
+  text-transform: uppercase;
+  background-color: $color-btn-default;
+  border-radius: 5px;
+  border-bottom-with: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: $color-btn-hover--default;
+
+  span{
+    margin: auto;
+  }
+
+  &:hover {
+    background-color: $color-btn-hover--default;
+  }
+
+  &--orange {
+    margin-bottom: 50px;
+
+    background-color: $color-btn--orange;
+    border-bottom-color: $color-btn-hover--orange;
+
+    &:hover {
+      background-color: $color-btn-hover--orange;
+    }
+  }
+
+  &--green {
+    background-color: $color-btn--green;
+    border-bottom-color: $color-btn-hover--green;
+
+    &:hover {
+      background-color: $color-btn-hover--green;
+    }
+  }
+
+  &--blue {
+    background-color: $color-btn--blue;
+    border-bottom-color: $color-btn-hover--blue;
+
+    &:hover {
+      background-color: $color-btn-hover--blue;
+    }
+  }
+}
+
