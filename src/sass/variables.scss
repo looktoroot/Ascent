@@ -29,7 +29,9 @@ $color-btn-hover--blue:             darken(desaturate($color-btn--blue, 13.67), 
 $font-family:                       "TitilliumWeb", "Arial", sans-serif;
 
 //размеры шрифтов
+$font-size--small:                  12px;
 $font-size:                         16px;
+$font-size--large:                  18px;
 $font-size-header-text:             42.16px;
 $font-size-header-text--small:      30px;
 
@@ -37,6 +39,7 @@ $font-size-header-text--small:      30px;
 
 //размеры экранов
 $screen-sm:                         480px;
+$screen-sm--larger:                 580px;
 $screen-md:                         768px;
 $screen-lg:                         992px;
 

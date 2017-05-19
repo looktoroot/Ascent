@@ -26,7 +26,21 @@ p {
 }
 
 .wrapper {
+  margin-left: auto;
+  margin-right: auto;
+
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 1140px;
+
+  @media (min-width: $screen-sm) {
+    padding-left: 35px;
+    padding-right: 25px;
+  }
+
+  @media (min-width: $screen-md) {
+    padding-left: 60px;
+    padding-right: 45px;
+  }
 }
 

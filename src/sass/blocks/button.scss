@@ -6,11 +6,14 @@
   max-width: 293px;
   min-height: 66px;
 
+  font-size: $font-size--large;
+  font-weight: 600;
+
   color: inherit;
   text-transform: uppercase;
   background-color: $color-btn-default;
   border-radius: 5px;
-  border-bottom-with: 4px;
+  border-bottom-width: 4px;
   border-bottom-style: solid;
   border-bottom-color: $color-btn-hover--default;
 
