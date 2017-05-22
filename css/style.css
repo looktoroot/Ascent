@@ -406,12 +406,8 @@ template {
   display: -ms-flexbox;
   display: flex;
   width: 300px;
-  margin: 30px auto;
   background-color: gray; }
-  .test-block:hover {
-    background-color: #ccadff; }
-  .test-block__title {
-    color: #ccf;
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px; }
+
+.test-block__title {
+  color: #fff;
+  text-align: center; }
