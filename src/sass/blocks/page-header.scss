@@ -68,11 +68,11 @@
 
     max-width: 910px;
 
-    font-size: $font-size-header-text--small;
+    font-size: $font-size-welcome-text--mobile;
     font-weight: 700;
 
     @media (min-width: $screen-sm) {
-      font-size: $font-size-header-text;
+      font-size: $font-size-welcome-text;
       text-align: center;
     }
   }

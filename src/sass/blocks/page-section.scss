@@ -1,0 +1,24 @@
+.page-section {
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  &--services {
+    background-color: $color-section-first;
+    color: $color-font-main;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+
+    @media (min-width: $screen-sm) {
+      justify-content: space-around;
+    }
+  }
+
+  @media (min-width: $screen-sm) {
+    padding-top: 100px;
+  }
+}
