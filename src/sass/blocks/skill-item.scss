@@ -1,0 +1,58 @@
+.skill-item {
+  @include adaptive-items;
+
+  &__progress {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    display: flex;
+    width: 160px;
+    height: 160px;
+
+    text-align: center;
+    background-repeat: no-repeat;
+
+    &--first {
+      background-image: url("../img/web-desing-progress.png");
+    }
+
+    &--second {
+      background-image: url("../img/html-css-progress.png");
+    }
+
+    &--thrid {
+      background-image: url("../img/graphic-design-progress.png");
+    }
+
+    &--fourth {
+      background-image: url("../img/ui-ux-progress.png");
+    }
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__progress-numeral {
+    margin: auto;
+    font-size: $font-size--numerals;
+    font-weight: 300;
+
+    &::after {
+      content: "%";
+      font-size: 0.7em;
+    }
+  }
+
+  &__name {
+    margin-bottom: 20px;
+
+    display: block;
+
+    font-size: $font-size-item-title;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+  }
+}

@@ -1,25 +1,5 @@
 .service-item {
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-bottom: 50px;
-
-  min-width: 230px;
-
-  text-align: center;
-
-  @media (min-width: $screen-sm) {
-    padding-left: 3%;
-    padding-right: 3%;
-
-    max-width: 50%;
-  }
-
-  @media (min-width: $screen-md) {
-    padding-left: 1%;
-    padding-right: 1%;
-
-    max-width: 25%;
-  }
+  @include adaptive-items;
 
   &__image {
     margin-bottom: 25px;

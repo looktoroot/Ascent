@@ -1,0 +1,29 @@
+.team-member {
+@include adaptive-items;
+
+  &__photo {
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 5px;
+
+    display: block;
+
+    font-size: $font-size-item-title;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__profession {
+    display: block;
+
+    color: $color-font-label;
+  }
+}
