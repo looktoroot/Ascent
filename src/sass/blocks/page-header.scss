@@ -35,8 +35,6 @@
 
     display: flex;
     flex-wrap: wrap;
-
-    list-style: none;
   }
 
   &__nav-item {
@@ -49,13 +47,9 @@
     border-radius: 5px;
 
     &:hover {
-      background-color: $color-page-header--hover;
-      border-color: $color-page-header--hover;
+      background-color: $color-page-header--nav;
+      border-color: $color-page-header--nav;
     }
-  }
-
-  &__nav-item a {
-    color: inherit;
   }
 
   &__text {

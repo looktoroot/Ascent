@@ -2,6 +2,113 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
+  @media (min-width: $screen-sm) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+
+    @media (min-width: $screen-sm) {
+      justify-content: space-around;
+    }
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 50px;
+
+    @media (min-width: $screen-sm) {
+      margin-bottom: 100px;
+    }
+
+    &--portfolio {
+
+      @media (min-width: $screen-sm) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 0.8em;
+
+    font-size: $font-size--h1-mobile;
+    font-weight: 700;
+    letter-spacing: 0.095em;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      left: calc(50% - 43px);
+      bottom: -0.2em;
+
+      display: block;
+      width: 86px;
+      height: 4px;
+
+      box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (min-width: $screen-sm) {
+      font-size: $font-size--h1;
+    }
+  }
+
+  &__description {
+    font-size: $font-size--large;
+  }
+
+  &__tabs {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+
+    text-transform: uppercase;
+    font-size: $font-size--large;
+  }
+
+  &__tab-list{
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__tab-item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    border-color: transparent;
+    border-style: solid;
+    border-top-width: 0.4em;
+    border-bottom-width: 0.4em;
+    border-left-width: 0.9em;
+    border-right-width: 0.9em;
+    border-radius: 5px;
+
+    background-color: $color-section-fourth--tabs;
+    border-color: $color-section-fourth--tabs;
+
+    &:hover {
+      background-color: $color-section-fourth--tabs-active;
+      border-color: $color-section-fourth--tabs-active;
+    }
+  }
+
+
+
   &--services {
     background-color: $color-section-first;
     color: $color-font-main;
@@ -17,19 +124,8 @@
     color: $color-font-main--dark;
   }
 
-  &__content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
-
-    @media (min-width: $screen-sm) {
-      justify-content: space-around;
-    }
-  }
-
-  @media (min-width: $screen-sm) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  &--portfolio {
+    background-color: $color-section-fourth;
+    color: $color-font-main--dark-other;
   }
 }

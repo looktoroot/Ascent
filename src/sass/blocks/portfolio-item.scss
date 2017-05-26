@@ -1,0 +1,15 @@
+.portfolio-item {
+  margin-bottom: 60px;
+
+  &__image {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    display: block;
+
+    font-size:$font-size--large;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
