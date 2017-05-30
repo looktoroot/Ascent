@@ -16,6 +16,13 @@
     @media (min-width: $screen-sm) {
       justify-content: space-around;
     }
+
+    &--portfolio {
+
+      @media (min-width: $screen-sm) {
+        justify-content: flex-start;
+      }
+    }
   }
 
   &__header {
@@ -127,5 +134,15 @@
   &--portfolio {
     background-color: $color-section-fourth;
     color: $color-font-main--dark-other;
+  }
+
+  &--about-us {
+    background-color: $color-section-fifth;
+    color: $color-font-main;
+  }
+
+  &--feedback {
+    background-color: $color-section-sixth;
+    color: $color-font-main;
   }
 }

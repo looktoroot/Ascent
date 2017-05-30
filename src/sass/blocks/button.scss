@@ -13,9 +13,8 @@
   text-transform: uppercase;
   background-color: $color-btn-default;
   border-radius: 5px;
-  border-bottom-width: 4px;
-  border-bottom-style: solid;
-  border-bottom-color: $color-btn-hover--default;
+
+  box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.2);
 
   span{
     margin: auto;
@@ -29,29 +28,38 @@
     margin-bottom: 50px;
 
     background-color: $color-btn--orange;
-    border-bottom-color: $color-btn-hover--orange;
 
     &:hover {
       background-color: $color-btn-hover--orange;
+      box-shadow: none;
     }
   }
 
   &--green {
     background-color: $color-btn--green;
-    border-bottom-color: $color-btn-hover--green;
 
     &:hover {
       background-color: $color-btn-hover--green;
+      box-shadow: none;
     }
   }
 
   &--blue {
     background-color: $color-btn--blue;
-    border-bottom-color: $color-btn-hover--blue;
 
     &:hover {
       background-color: $color-btn-hover--blue;
+      box-shadow: none;
     }
+  }
+
+  &--submit {
+    width: 100%;
+
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+
   }
 }
 
