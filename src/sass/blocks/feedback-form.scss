@@ -69,5 +69,11 @@
     position: absolute;
     top: 18px;
     left: 10px;
+
+    & span {
+      padding-left: 3px;
+
+      color: #ff4444;
+    }
   }
 }

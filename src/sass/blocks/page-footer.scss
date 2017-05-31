@@ -1,0 +1,35 @@
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $color-page-footer;
+  color: $color-font-main;
+
+  &__social-links {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    font-size: $font-size--large;
+    font-weight: 600;
+    letter-spacing: 0.055em;;
+
+    @media (min-width: $screen-sm) {
+      font-size: $font-size-item-title;
+    }
+  }
+
+  &__social-links-item {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    & a:hover {
+      color: $color-page-footer--link-hover;
+    }
+  }
+
+}

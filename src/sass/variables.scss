@@ -10,7 +10,8 @@ $color-section-fourth--tabs-active:       #ffffff;
 $color-section-fifth:                     #d74680;
 $color-section-sixth:                     #3c5499;
 $color-section-sixth--form-item:          darken(saturate($color-section-sixth, 5.02), 11.96);
-$color-page-footer:                       #3c5499;
+$color-page-footer:                       #344b8e;
+$color-page-footer--link-hover:           lighten(saturate(adjust-hue($color-page-footer, -30), 32.83), 16.67);
 
 //цвета шрифтов
 $color-font-main:                         #ffffff;
