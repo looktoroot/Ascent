@@ -17,6 +17,11 @@
     font-size: $font-size-item-title;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.02em;
+  }
+
+  &__description {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

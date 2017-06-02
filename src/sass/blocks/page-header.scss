@@ -1,9 +1,14 @@
 .page-header {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 
   background-color: $color-page-header;
   color: $color-font-main;
+
+  @media (min-width: $screen-md) {
+    padding-top: 55px;
+    padding-bottom: 150px;
+  }
 
   &__top {
     margin-bottom: 50px;
@@ -11,6 +16,17 @@
     @media (min-width: $screen-sm--larger) {
       display: flex;
       justify-content: space-between;
+    }
+
+    @media (min-width: $screen-md) {
+      padding-left: 43px;
+      padding-right: 10px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 43px;
+      padding-right: 10px;
+      margin-bottom: 125px;
     }
   }
 
@@ -50,10 +66,14 @@
       background-color: $color-page-header--nav;
       border-color: $color-page-header--nav;
     }
+
+    @media (min-width: $screen-md) {
+      margin-left: 15px;
+    }
   }
 
   &__text {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     margin-left: auto;
     margin-right: auto;
 
@@ -61,6 +81,10 @@
 
     font-size: $font-size-welcome-text--mobile;
     font-weight: 700;
+
+    p {
+      margin: 0;
+    }
 
     @media (min-width: $screen-sm) {
       font-size: $font-size-welcome-text;

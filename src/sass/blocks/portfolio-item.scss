@@ -1,8 +1,12 @@
 .portfolio-item {
   margin-bottom: 60px;
 
+  &:last-child {
+    margin-bottom: 80px;
+  }
+
   &__image {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
 
   &__title {

@@ -2,9 +2,9 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  @media (min-width: $screen-sm) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  @media (min-width: $screen-md) {
+    padding-top: 110px;
+    padding-bottom: 110px;
   }
 
   &__content {
@@ -30,19 +30,20 @@
     margin-bottom: 50px;
 
     @media (min-width: $screen-sm) {
-      margin-bottom: 100px;
+      margin-bottom: 80px;
     }
 
     &--portfolio {
 
       @media (min-width: $screen-sm) {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
       }
     }
   }
 
   &__title {
     position: relative;
+    margin-top: 0;
     margin-bottom: 0.8em;
 
     font-size: $font-size--h1-mobile;
@@ -70,14 +71,20 @@
   }
 
   &__description {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 600px;
+
     font-size: $font-size--large;
+    line-height: 1.5;
   }
 
   &__tabs {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     display: flex;
     justify-content: center;
@@ -101,8 +108,8 @@
     border-style: solid;
     border-top-width: 0.4em;
     border-bottom-width: 0.4em;
-    border-left-width: 0.9em;
-    border-right-width: 0.9em;
+    border-left-width: 1.3em;
+    border-right-width: 1.3em;
     border-radius: 5px;
 
     background-color: $color-section-fourth--tabs;
@@ -139,6 +146,10 @@
   &--about-us {
     background-color: $color-section-fifth;
     color: $color-font-main;
+
+    @media (min-width: $screen-md) {
+      padding-bottom: 0;
+    }
   }
 
   &--feedback {
