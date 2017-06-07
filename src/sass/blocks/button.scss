@@ -3,8 +3,14 @@
   margin-right: auto;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
+
   max-width: 293px;
   min-height: 66px;
+
+
+  line-height: 60px; //for vertical center in stupid IE
 
   font-size: $font-size--large;
   font-weight: 600;
@@ -17,7 +23,7 @@
   box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.2);
 
   span{
-    margin: auto;
+    display: block;
   }
 
   &:hover {

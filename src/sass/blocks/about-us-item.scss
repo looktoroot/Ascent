@@ -2,14 +2,13 @@
   margin-bottom: 70px;
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 
   @media (min-width: $screen-sm) {
     margin-bottom: 110px;
 
-    flex-direction: row;
-    align-items: flex-start;
+    flex-wrap: nowrap;
   }
 
   @media (min-width: $screen-md) {
@@ -21,11 +20,13 @@
   }
 
   &__photo {
+    background-color: red;
     margin-bottom: 30px;
 
-    max-width: 100%;
-    height: auto;
-    display: block;
+
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
 
     border-radius: 50%;
 
@@ -34,6 +35,7 @@
       margin-right: 20px;
 
       max-width: 96px;
+      max-height: 96px;
     }
 
     @media (min-width: $screen-lg) {
@@ -44,21 +46,16 @@
 
   &__quote {
     margin: 0;
-
-    max-width: 580px;
   }
 
   &__quote-text {
+    overflow: hidden;
     margin-top: 0;
     margin-bottom: 35px;
 
     quotes: "\201c" "\201d";
     font-size: $font-size--quote;
     font-style: italic;
-  }
-
-  &__quote-cite {
-
   }
 
   &__quote-cite-name {

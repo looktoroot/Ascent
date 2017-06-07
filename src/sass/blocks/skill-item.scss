@@ -7,6 +7,8 @@
     margin-bottom: 20px;
 
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 160px;
     height: 160px;
 
@@ -35,7 +37,6 @@
   }
 
   &__progress-numeral {
-    margin: auto;
     font-size: $font-size--numerals;
     font-weight: 300;
 
