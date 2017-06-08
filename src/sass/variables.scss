@@ -19,6 +19,7 @@ $color-font-main--dark:                   #3c4761;
 $color-font-main--dark-other:             #393939;
 $color-font-label--blue:                  #30bae7;
 $color-font-label--yellow:                #ffdd99;
+
 //цвета кнопок
 $color-btn-default:                       #999999;
 $color-btn--orange:                       #eb7d4b;
@@ -28,6 +29,12 @@ $color-btn-hover--default:                darken($color-btn-default, 10);
 $color-btn-hover--orange:                 darken(desaturate($color-btn--orange, 24.72), 9.02);
 $color-btn-hover--green:                  darken(desaturate($color-btn--green, 0.42), 6.27);
 $color-btn-hover--blue:                   darken(desaturate($color-btn--blue, 13.67), 8.04);
+
+//цвета для иконок
+$color-icon-hover--facebook:              #3b5997;
+$color-icon-hover--twitter:               #00acee;
+$color-icon-hover--linkedin:              #000000;
+$color-icon-hover--mail:                  #da4338;
 
 
 //семейство шрифта

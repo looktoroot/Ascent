@@ -38,15 +38,12 @@
 
   &__nav {
     display: flex;
-
+    align-items: center;
     text-transform: uppercase;
   }
 
   &__nav-list{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
     padding: 0;
 
     display: flex;

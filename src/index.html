@@ -6,6 +6,20 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <svg style="display: none">
+    <symbol id="icon-facebook" viewBox="0 0 16 32">
+      <path fill="#fff" d="M14.831 0h-3.512s-7.037-0.525-7.037 6.895v3.835h-4.25l0.011 4.271h4.237l-0.064 17.028h6.438v-16.965l3.693-0.068 1.326-4.265h-5.087v-4.386s-0.053-1.946 2.231-1.946h1.991l0.023-4.401z"></path>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 31 32">
+      <path fill="#fff" d="M24.984 31.959v-12.987c0-2.833-1.961-4.766-4.441-4.766-1.89 0-2.981 1.302-3.478 2.561-0.183 0.45-0.223 1.081-0.223 1.712v13.475h-6.041v-22.291h5.449l0.649 2.275c0.902-1.44 2.853-3.050 6.546-3.050 4.502 0 7.617 2.626 7.617 9.105v13.958h-6.084zM3.812 6.875c-2.283 0-3.812-1.46-3.812-3.433 0-2.022 1.521-3.454 3.853-3.454s3.756 1.432 3.802 3.455c0 1.975-1.42 3.427-3.845 3.427zM6.733 32.020h-6.11v-22.353h6.104v22.353z"></path>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 43 32">
+      <path fill="#fff" d="M1.635 2.996c1.303 0.724 16.716 10.747 17.388 11.122 0.67 0.37 1.546 0.552 2.425 0.552s1.753-0.182 2.425-0.555c0.67-0.37 16.086-10.399 17.394-11.122 1.305-0.724 2.546-2.994 0.142-2.994h-39.92c-2.401 0-1.169 2.273 0.145 2.996zM41.82 8.517c-1.485 0.799-17.037 10.632-17.946 11.122-0.911 0.488-1.546 0.552-2.425 0.552s-1.517-0.064-2.425-0.555c-0.911-0.488-16.461-10.318-17.946-11.122-1.045-0.563-1.034 0.099-1.034 0.608v20.248c0 1.152 1.493 2.645 2.653 2.645h37.505c1.16 0 2.653-1.49 2.653-2.648v-20.248c0-0.509 0.011-1.168-1.035-0.606z"></path>
+    </symbol>
+    <symbol id="icon-twitter" viewBox="0 0 39 32">
+      <path fill="#fff" d="M38.821 3.785c-1.426 0.64-2.96 1.074-4.571 1.271 1.646-1.001 2.907-2.583 3.502-4.471-1.538 0.928-3.241 1.6-5.051 1.961-1.454-1.57-3.52-2.551-5.81-2.551-4.395 0-7.959 3.618-7.959 8.080 0 0.633 0.069 1.25 0.206 1.84-6.61-0.338-12.48-3.552-16.4-8.441-0.686 1.193-1.079 2.583-1.079 4.062 0 2.802 1.406 5.275 3.543 6.725-1.303-0.041-2.537-0.405-3.607-1.006v0.098c0 3.915 2.743 7.177 6.382 7.922-0.667 0.183-1.371 0.283-2.098 0.283-0.512 0-1.010-0.050-1.497-0.144 1.013 3.209 3.954 5.547 7.435 5.611-2.725 2.165-6.155 3.456-9.883 3.456-0.64 0-1.275-0.039-1.897-0.114 3.52 2.295 7.703 3.634 12.197 3.634 14.635 0 22.64-12.315 22.64-22.994 0-0.347-0.007-0.697-0.023-1.045 1.554-1.138 2.903-2.56 3.97-4.183z"></path>
+    </symbol>
+  </svg>
   <header class="page-header">
     <div class="wrapper">
       <div class="page-header__top">
@@ -98,7 +112,28 @@
             Lorem ipsum dolor sit amet,
             consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
           </p>
-          <div class="team-member__social-icons"></div>
+          <p class="team-member__social-icons">
+            <a class="team-member__social-icons-link team-member__social-icons-link--facebook" href="#" title="Facebook">
+              <svg width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+            <a class="team-member__social-icons-link team-member__social-icons-link--twitter" href="#" title="Twitter">
+              <svg width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+            <a class="team-member__social-icons-link team-member__social-icons-link--linkedin" href="#" title="LinkedIn">
+              <svg width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-linkedin"></use>
+              </svg>
+            </a>
+            <a class="team-member__social-icons-link team-member__social-icons-link--mail" href="#" title="Mail">
+              <svg width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
+              </svg>
+            </a>
+          </p>
         </div>
 
         <div class="team-member">
@@ -108,7 +143,23 @@
           <p class="team-member__description">
             Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.
           </p>
-          <div class="team-member__social-icons"></div>
+          <p class="team-member__social-icons">
+            <a class="team-member__social-icons-link team-member__social-icons-link--twitter" href="#" title="Twitter">
+              <svg width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+            <a class="team-member__social-icons-link team-member__social-icons-link--linkedin" href="#" title="LinkedIn">
+              <svg width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-linkedin"></use>
+              </svg>
+            </a>
+            <a class="team-member__social-icons-link team-member__social-icons-link--mail" href="#" title="Mail">
+              <svg width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
+              </svg>
+            </a>
+          </p>
         </div>
 
         <div class="team-member">
@@ -116,9 +167,30 @@
           <span class="team-member__name">Olivia Wilde</span>
           <span class="team-member__profession">Lead Designer</span>
           <p class="team-member__description">
-            Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.
+            Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.
           </p>
-          <div class="team-member__social-icons"></div>
+          <p class="team-member__social-icons">
+            <a class="team-member__social-icons-link team-member__social-icons-link--facebook" href="#" title="Facebook">
+              <svg width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+            <a class="team-member__social-icons-link team-member__social-icons-link--twitter" href="#" title="Twitter">
+              <svg width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+            <a class="team-member__social-icons-link team-member__social-icons-link--linkedin" href="#" title="LinkedIn">
+              <svg width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-linkedin"></use>
+              </svg>
+            </a>
+            <a class="team-member__social-icons-link team-member__social-icons-link--mail" href="#" title="Mail">
+              <svg width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
+              </svg>
+            </a>
+          </p>
         </div>
 
         <div class="team-member">
@@ -126,9 +198,25 @@
           <span class="team-member__name">Ashley Greene</span>
           <span class="team-member__profession">SEO / Developer</span>
           <p class="team-member__description">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.
           </p>
-          <div class="team-member__social-icons"></div>
+          <p class="team-member__social-icons">
+            <a class="team-member__social-icons-link team-member__social-icons-link--facebook" href="#" title="Facebook">
+              <svg width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+            <a class="team-member__social-icons-link team-member__social-icons-link--twitter" href="#" title="Twitter">
+              <svg width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+            <a class="team-member__social-icons-link team-member__social-icons-link--mail" href="#" title="Mail">
+              <svg width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
+              </svg>
+            </a>
+          </p>
         </div>
       </div>
     </div>
