@@ -16,13 +16,6 @@
     @media (min-width: $screen-sm) {
       justify-content: space-around;
     }
-
-    &--portfolio {
-
-      @media (min-width: $screen-sm) {
-        justify-content: flex-start;
-      }
-    }
   }
 
   &__header {

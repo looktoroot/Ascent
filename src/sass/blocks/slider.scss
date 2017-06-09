@@ -1,0 +1,85 @@
+.slider {
+
+  #slide-1:checked ~ .slider__tab-container label[for="slide-1"],
+  #slide-2:checked ~ .slider__tab-container label[for="slide-2"],
+  #slide-3:checked ~ .slider__tab-container label[for="slide-3"] {
+    background-color: $color-section-fourth--tabs-active;
+    border-color: $color-section-fourth--tabs-active;
+  }
+
+  #slide-1:checked ~ .slider__slide-container > .slider__slide-content:nth-of-type(1),
+  #slide-2:checked ~ .slider__slide-container > .slider__slide-content:nth-of-type(2),
+  #slide-3:checked ~ .slider__slide-container > .slider__slide-content:nth-of-type(3) {
+    opacity: 1;
+    position: relative;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__tab-container {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+
+    display: flex;
+    justify-content: center;
+
+    text-transform: uppercase;
+    font-size: $font-size--large;
+  }
+
+  &__tab-list {
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__tab-item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    border-color: transparent;
+    border-style: solid;
+    border-top-width: 0.4em;
+    border-bottom-width: 0.4em;
+    border-left-width: 1.3em;
+    border-right-width: 1.3em;
+    border-radius: 5px;
+
+    background-color: $color-section-fourth--tabs;
+    border-color: $color-section-fourth--tabs;
+
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color-section-fourth--tabs-active;
+      border-color: $color-section-fourth--tabs-active;
+    }
+  }
+
+  &__slide-container {
+    position: relative;
+  }
+
+  &__slide-content {
+    top: 0;
+    position: absolute;
+
+    opacity: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+
+    transition: opacity 0.8s ease;
+
+    @media (min-width: $screen-sm) {
+      justify-content: space-around;
+    }
+  }
+}
