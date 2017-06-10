@@ -1,0 +1,25 @@
+.hamburger {
+  padding: 5px;
+
+  cursor: pointer;
+
+  display: block;
+
+  &__line {
+    margin-bottom: 6px;
+
+    width: 30px;
+
+    border-bottom: 3px solid $color-font-main;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $screen-sm--larger) {
+    display: none;
+  }
+
+
+}

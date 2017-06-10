@@ -4,6 +4,11 @@
   <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
   <title>Ascention</title>
   <link rel="stylesheet" href="css/style.css">
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous">
+  </script>
 </head>
 <body>
   <svg style="display: none">
@@ -27,6 +32,11 @@
           <img src="img/logo.svg" width="117" height="37" alt="Cuda">
         </a>
         <nav class="page-header__nav">
+          <div class="hamburger">
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+          </div>
           <ul class="page-header__nav-list">
             <li class="page-header__nav-item"><a href="#">Home</a></li>
             <li class="page-header__nav-item"><a href="#">About</a></li>
@@ -120,7 +130,7 @@
             </a>
             <a class="team-member__social-icons-link team-member__social-icons-link--twitter" href="#" title="Twitter">
               <svg width="16" height="16">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+                <use xmlns:xlink="http://www.w324rg/1999/xlink" xlink:href="#icon-twitter"></use>
               </svg>
             </a>
             <a class="team-member__social-icons-link team-member__social-icons-link--linkedin" href="#" title="LinkedIn">
@@ -472,7 +482,15 @@
 
 
 
+<script>
+  $(document).ready( function(){
+    $(".hamburger").click(function(){
+      $(".page-header__nav-list").toggleClass("open");
 
+    });
+
+  });
+</script>
 
 </body>
 </html>
