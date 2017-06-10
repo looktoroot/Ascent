@@ -18,13 +18,6 @@
 
     position: relative;
 
-
-
-    // @media (min-width: $screen-sm--larger) {
-    //   // display: flex;
-    //   justify-content: space-between;
-    // }
-
     @media (min-width: $screen-md) {
       padding-left: 43px;
       padding-right: 10px;
@@ -38,9 +31,9 @@
   }
 
   &__logo {
-    // margin-bottom: 10px;
-
     display: block;
+    position: relative;
+
   }
 
   &__nav {

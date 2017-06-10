@@ -489,7 +489,34 @@
 
     });
 
+ // var HeaderTop = $('.page-header__top').offset().top;
+
+ //    $(window).scroll(function(){
+ //      if( $(window).scrollTop() > HeaderTop ) {
+ //        $('.page-header__top').addClass('fixed');
+ //      } else {
+ //        $('.page-header__top').removeClass('fixed');
+ //      }
+ //    });
+
+
+    $(window).scroll(function(){
+      if($(this).scrollTop() != 0){
+        $('.page-header__top').addClass('fixed');
+      }
+      else {
+        $('.page-header__top').removeClass('fixed');
+      }
+    });
+
+
+
+    // $(window).scroll(function(){
+    //   $('.page-header__top').addClass('fixed');
+    // });
+
   });
+
 </script>
 
 </body>

@@ -39,3 +39,15 @@ ul {
   height: auto !important;
 }
 
+.fixed {
+  position: fixed !important;
+  // position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $color-page-header;
+  z-index: 1000;
+
+  padding: 10px;
+}
+
