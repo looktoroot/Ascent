@@ -26,7 +26,7 @@
     </symbol>
   </svg>
   <header class="page-header">
-    <div class="wrapper">
+    <div class="container-for-fixed">
       <div class="page-header__top">
         <a class="page-header__logo" href="#">
           <img src="img/logo.svg" width="117" height="37" alt="Cuda">
@@ -46,6 +46,9 @@
           </ul>
         </nav>
       </div>
+    </div>
+
+    <div class="wrapper">
       <div class="page-header__text">
         <p>
           Hi there! We are the new kids on the block
@@ -476,12 +479,6 @@
   </footer>
 
 
-
-
-
-
-
-
 <script>
   $(document).ready( function(){
     $(".hamburger").click(function(){
@@ -489,32 +486,35 @@
 
     });
 
- // var HeaderTop = $('.page-header__top').offset().top;
-
- //    $(window).scroll(function(){
- //      if( $(window).scrollTop() > HeaderTop ) {
- //        $('.page-header__top').addClass('fixed');
- //      } else {
- //        $('.page-header__top').removeClass('fixed');
- //      }
- //    });
-
+ var headerTop = $('.page-header__top').offset().top;
+ var headerTextPadding = $('.page-header__text').css('padding-top');
 
     $(window).scroll(function(){
-      if($(this).scrollTop() != 0){
-        $('.page-header__top').addClass('fixed');
-      }
-      else {
-        $('.page-header__top').removeClass('fixed');
+      if( $(window).scrollTop() > headerTop ) {
+        $('.container-for-fixed').addClass('fixed');
+        $('.page-header__text').css('padding-top', $('.page-header__top').innerHeight());
+
+      } else {
+        $('.container-for-fixed').removeClass('fixed');
+        $('.page-header__text').css('padding-top', headerTextPadding);
       }
     });
 
 
-
-    // $(window).scroll(function(){
-    //   $('.page-header__top').addClass('fixed');
-    // });
-
+    //SMOOTH SCROLLING
+    // $(function() {
+    //   $('a[href*=#]:not([href=#])').click(function() {
+    //     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    //       var target = $(this.hash);
+    //       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    //       if (target.length) {
+    //         $('html,body').animate({
+    //           scrollTop: target.offset().top -50
+    //         }, 1000);
+    //         return false;
+    //       }
+    //     }
+    //   });
   });
 
 </script>

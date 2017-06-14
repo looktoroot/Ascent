@@ -1,5 +1,5 @@
 .page-header {
-  padding-top: 20px;
+  padding-top: 1px;
   padding-bottom: 50px;
 
   background-color: $color-page-header;
@@ -11,29 +11,21 @@
   }
 
   &__top {
-    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    max-width: 1140px;
+
+    margin: 0 auto;
+    padding: 20px;
+
+    transition: box-shadow 1s ease;
     position: relative;
-
-    @media (min-width: $screen-md) {
-      padding-left: 43px;
-      padding-right: 10px;
-    }
-
-    @media (min-width: $screen-lg) {
-      padding-left: 43px;
-      padding-right: 10px;
-      margin-bottom: 125px;
-    }
   }
 
   &__logo {
     display: block;
-    position: relative;
-
   }
 
   &__nav {
@@ -42,7 +34,7 @@
 
   &__nav-list{
     margin: 0;
-    padding: 5px 0 5px 0;
+    padding: 0;
 
     width: 100%;
     height: 0;
@@ -53,8 +45,6 @@
 
     overflow: hidden;
     background-color: $color-page-header;
-
-    transition: 0.3s;
 
     @media (min-width: $screen-sm--larger) {
       height: auto;
@@ -88,6 +78,7 @@
 
 
   &__text {
+    margin-top: 50px;
     margin-bottom: 55px;
     margin-left: auto;
     margin-right: auto;
@@ -104,6 +95,7 @@
     @media (min-width: $screen-sm) {
       font-size: $font-size-welcome-text;
       text-align: center;
+      margin-top: 125px;
     }
   }
 }
