@@ -1,0 +1,21 @@
+{
+  "name": "ascension",
+  "description": "potrfolio project",
+  "main": "index.js",
+  "authors": [
+    "looktoroot"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/looktoroot/Ascent",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

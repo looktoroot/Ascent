@@ -2,6 +2,7 @@ build/*
 !build/readme.md
 src/css/*.css
 node_modules/
+bower_components/
 Thumbs.db
 .DS_Store
 *.sublime*

@@ -11,6 +11,9 @@ var del = require("del");
 var ghPages = require("gulp-gh-pages");
 var run = require("run-sequence");
 var imagemin = require("gulp-imagemin");
+var concat = require("gulp-concat");
+var uglify = require("gulp-uglifyjs");
+var rename = require("gulp-rename");
 
 
 // Компиляция sass + автопрефиксер и сборщик медиа выражений(как плагины postcss)
@@ -39,9 +42,22 @@ gulp.task("serve", function() {
 
 
   gulp.watch("src/sass/**/*.scss", ["style"]);
+  gulp.watch("src/scripts/*.js", ["scripts", browserSync.reload]);
   gulp.watch("src/*.html").on("change", browserSync.reload);
-  gulp.watch("src/js/*.js").on("change", browserSync.reload);
 });
+
+// Конкотенация и углификация js-библиотек и своих js-скриптов
+gulp.task("scripts", function() {
+  return gulp.src([
+    "bower_components/jquery/dist/jquery.min.js",
+    "src/scripts/*.js"
+    ])
+    .pipe(concat("script.min.js"))
+    .pipe(uglify())
+    .pipe(gulp.dest("src/js"));
+});
+
+
 
 //Оптимизация растровых изображений
 gulp.task("images", function() {
