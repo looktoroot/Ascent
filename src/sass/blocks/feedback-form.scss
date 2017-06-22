@@ -23,7 +23,7 @@
     }
 
     &--small {
-      min-height: 55px;
+      height: 55px;
 
       @media (min-width: $screen-sm--larger) {
         margin-bottom: 20px;
