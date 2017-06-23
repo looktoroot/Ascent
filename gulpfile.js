@@ -14,6 +14,7 @@ var imagemin = require("gulp-imagemin");
 var concat = require("gulp-concat");
 var uglify = require("gulp-uglifyjs");
 var rename = require("gulp-rename");
+var cssnano = require("gulp-cssnano");
 
 
 // Компиляция sass + автопрефиксер и сборщик медиа выражений(как плагины postcss)
@@ -46,20 +47,17 @@ gulp.task("serve", function() {
   gulp.watch("src/*.html").on("change", browserSync.reload);
 });
 
-// Конкотенация и углификация js-библиотек и своих js-скриптов
+// Конкотенация js-библиотек и своих js-скриптов
 gulp.task("scripts", function() {
   return gulp.src([
-    "bower_components/jquery/dist/jquery.min.js",
+    "bower_components/jquery/dist/jquery.js",
     "src/scripts/*.js"
     ])
-    .pipe(concat("script.min.js"))
-    .pipe(uglify())
+    .pipe(concat("script.js"))
     .pipe(gulp.dest("src/js"));
 });
 
-
-
-//Оптимизация растровых изображений
+//Оптимизация растровых изображений, запускается отдельно вручную
 gulp.task("images", function() {
   return gulp.src("src/img/**/*.{png,jpg,gif}")
   .pipe(imagemin([
@@ -77,13 +75,29 @@ gulp.task("clean", function() {
   ]);
 });
 
-// Копирование всего в build
+// Копирование css в build, перед этим минификация
+gulp.task("copy:css", function() {
+  return gulp.src([
+    "src/css/*.css"
+    ])
+    .pipe(cssnano())
+    .pipe(gulp.dest("build/css"));
+});
+
+// Копирование js в build, перед этим углефикация
+gulp.task("copy:js", function() {
+  return gulp.src([
+    "src/js/*.js"
+    ])
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"));
+});
+
+// Копирование шрифтов, картинок и html в build
 gulp.task("copy", function() {
   return gulp.src([
       "src/fonts/**/*.{woff,woff2}",
       "src/img/**",
-      "src/js/**",
-      "src/css/**",
       "src/*.html"
 ], {
 base: "src" })
@@ -96,6 +110,8 @@ gulp.task("build", function(callback) {
     "clean",
     "style",
     "copy",
+    "copy:css",
+    "copy:js",
     callback
 ); });
 
