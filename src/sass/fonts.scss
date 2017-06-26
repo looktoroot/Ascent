@@ -1,44 +1,49 @@
 @font-face {
   font-family: "TitilliumWeb";
-  src: local("TitilliumWeb-Regular"),
-       url("../fonts/TitilliumWeb-Regular.woff2") format("woff2"),
-       url("../fonts/TitilliumWeb-Regular.woff") format("woff");
+  src:
+    local("TitilliumWeb-Regular"),
+    url("../fonts/TitilliumWeb-Regular.woff2") format("woff2"),
+    url("../fonts/TitilliumWeb-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "TitilliumWeb";
-  src: local("TitilliumWeb-Bold"),
-       url("../fonts/TitilliumWeb-Bold.woff2") format("woff2"),
-       url("../fonts/TitilliumWeb-Bold.woff") format("woff");
+  src:
+    local("TitilliumWeb-Bold"),
+    url("../fonts/TitilliumWeb-Bold.woff2") format("woff2"),
+    url("../fonts/TitilliumWeb-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "TitilliumWeb";
-  src: local("TitilliumWeb-SemiBold"),
-       url("../fonts/TitilliumWeb-SemiBold.woff2") format("woff2"),
-       url("../fonts/TitilliumWeb-SemiBold.woff") format("woff");
+  src:
+    local("TitilliumWeb-SemiBold"),
+    url("../fonts/TitilliumWeb-SemiBold.woff2") format("woff2"),
+    url("../fonts/TitilliumWeb-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "TitilliumWeb";
-  src: local("TitilliumWeb-Light"),
-       url("../fonts/TitilliumWeb-Light.woff2") format("woff2"),
-       url("../fonts/TitilliumWeb-Light.woff") format("woff");
+  src:
+    local("TitilliumWeb-Light"),
+    url("../fonts/TitilliumWeb-Light.woff2") format("woff2"),
+    url("../fonts/TitilliumWeb-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "TitilliumWeb";
-  src: local("TitilliumWeb-Italic"),
-       url("../fonts/TitilliumWeb-Italic.woff2") format("woff2"),
-       url("../fonts/TitilliumWeb-Italic.woff") format("woff");
+  src:
+    local("TitilliumWeb-Italic"),
+    url("../fonts/TitilliumWeb-Italic.woff2") format("woff2"),
+    url("../fonts/TitilliumWeb-Italic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }

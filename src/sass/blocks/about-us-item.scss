@@ -20,7 +20,7 @@
   }
 
   &__photo {
-    background-color: red;
+    background-color: #fff;
     margin-bottom: 30px;
 
 
@@ -31,7 +31,7 @@
     border-radius: 50%;
 
     @media (min-width: $screen-sm) {
-      margin-bottom: 0px;
+      margin-bottom: 0;
       margin-right: 20px;
 
       max-width: 96px;
@@ -39,7 +39,7 @@
     }
 
     @media (min-width: $screen-lg) {
-      margin-bottom: 0px;
+      margin-bottom: 0;
       margin-right: 50px;
     }
   }
