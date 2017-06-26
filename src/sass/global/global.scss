@@ -46,7 +46,12 @@ img {
 
   transition: height 1s ease;
   height: auto;
-  box-shadow: inset 0 -4px 0 0 rgba(0,0,0,0.2);
+
+  box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+
+  @media (min-width: $screen-md--larger) {
+    box-shadow: none;
+  }
 }
 
 .fixed {
@@ -55,11 +60,11 @@ img {
   top: 0;
   left: 0;
 
-  // max-width: 1140px;
+
 
   background-color: $color-page-header;
   z-index: 1000;
 
-  box-shadow: inset 0 -4px 0 0 rgba(0,0,0,0.2);
+  box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
 }
 

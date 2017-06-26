@@ -46,7 +46,7 @@
     overflow: hidden;
     background-color: $color-page-header;
 
-    @media (min-width: $screen-sm--larger) {
+    @media (min-width: $screen-md--larger) {
       height: auto;
 
       display: flex;
@@ -71,7 +71,7 @@
       border-color: $color-page-header--nav;
     }
 
-    @media (min-width: $screen-md) {
+    @media (min-width: $screen-md--larger) {
       margin-left: 15px;
     }
   }

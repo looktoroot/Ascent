@@ -12,6 +12,7 @@
 
   line-height: 60px; //for vertical center in stupid IE
 
+
   font-size: $font-size--large;
   font-weight: 600;
 
@@ -22,10 +23,11 @@
 
   box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
 
-  span {
-    display: block;
-    margin: 0 auto;
-  }
+  // text-align: center;
+
+  // span {
+  //   display: block;
+  // }
 
   &:hover {
     background-color: $color-btn-hover--default;
@@ -64,6 +66,14 @@
     font-family: inherit;
     border: none;
     cursor: pointer;
+
+    text-align: center;
+
+    display: table; //for IE and Safari
+
+    span {
+      margin: auto;
+    }
   }
 }
 
